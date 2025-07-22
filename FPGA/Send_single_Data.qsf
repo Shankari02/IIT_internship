@@ -1,0 +1,85 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2025  Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, the Altera Quartus Prime License Agreement,
+# the Altera IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Altera and sold by Altera or its authorized distributors.  Please
+# refer to the Altera Software License Subscription Agreements 
+# on the Quartus Prime software download page.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+# Date created = 11:34:37  June 05, 2025
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Send_single_Data_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Intel recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX 10"
+set_global_assignment -name DEVICE 10M25SCE144C8G
+set_global_assignment -name TOP_LEVEL_ENTITY new_experiment
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 24.1STD.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:34:37  JUNE 05, 2025"
+set_global_assignment -name LAST_QUARTUS_VERSION "24.1std.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_location_assignment PIN_90 -to q_Data_Out[0]
+set_location_assignment PIN_88 -to q_Data_Out[1]
+set_location_assignment PIN_86 -to q_Data_Out[2]
+set_location_assignment PIN_84 -to q_Data_Out[3]
+set_location_assignment PIN_79 -to q_Data_Out[4]
+set_location_assignment PIN_77 -to q_Data_Out[5]
+set_location_assignment PIN_75 -to q_Data_Out[6]
+set_location_assignment PIN_76 -to q_Data_Out[7]
+set_location_assignment PIN_118 -to i_Data_Out[0]
+set_location_assignment PIN_113 -to i_Data_Out[1]
+set_location_assignment PIN_110 -to i_Data_Out[2]
+set_location_assignment PIN_105 -to i_Data_Out[3]
+set_location_assignment PIN_101 -to i_Data_Out[4]
+set_location_assignment PIN_99 -to i_Data_Out[5]
+set_location_assignment PIN_96 -to i_Data_Out[6]
+set_location_assignment PIN_92 -to i_Data_Out[7]
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name FLOW_ENABLE_POWER_ANALYZER ON
+set_global_assignment -name POWER_DEFAULT_INPUT_IO_TOGGLE_RATE "12.5 %"
+set_location_assignment PIN_26 -to i_Clock
+set_location_assignment PIN_50 -to i_LED
+set_location_assignment PIN_25 -to i_Rx_Serial
+set_location_assignment PIN_52 -to q_LED
+set_global_assignment -name VERILOG_FILE clk_test.v
+set_global_assignment -name VERILOG_FILE uart_tx_debug.v
+set_global_assignment -name VERILOG_FILE sincos_fifo_dac.v
+set_global_assignment -name VERILOG_FILE sincos_experiment.v
+set_global_assignment -name VERILOG_FILE new_experiment.v
+set_global_assignment -name VERILOG_FILE dac_ff_test.v
+set_location_assignment PIN_54 -to o_LED
+set_location_assignment PIN_70 -to i_Enable
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
